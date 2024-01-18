@@ -79,7 +79,7 @@ class GeminiServiceTest {
                 "2023-12-01,195.25,200.00,193.50,198.00,1100000";
         MockMultipartFile multipartFile = new MockMultipartFile("file", "filename.txt", "text/plain", content.getBytes());
 
-        String text = service.analyzeData("Given the below data generate insightful content based on user preferences.", userPreferences, multipartFile);
+        String text = service.analyzeData("Given the below data generate insightful content based on user preferences.", userPreferences, multipartFile,"");
         assertNotNull(text);
         System.out.println(text);
     }

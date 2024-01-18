@@ -1,4 +1,4 @@
-package financial.planner.GPT_insights_async.entity;
+package com.rohit200400.busticketbooking.userservice.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class InsightData {
-    private String description;
-    private DataPoints dataPoints;
+public class GenerateTokenRequestDto {
+    private String email;
+    private String password;
 }
